@@ -1,15 +1,8 @@
 # Active Links
 
-[![Latest Stable Version](https://poser.pugx.org/designbycode/laravel-helpers/v/stable)](https://packagist.org/packages/designbycode/laravel-helpers)
-[![Total Downloads](https://poser.pugx.org/designbycode/laravel-helpers/downloads)](https://packagist.org/packages/designbycode/laravel-helpers)
-[![Latest Unstable Version](https://poser.pugx.org/designbycode/laravel-helpers/v/unstable)](https://packagist.org/packages/designbycode/laravel-helpers)
-[![License](https://poser.pugx.org/designbycode/laravel-helpers/license)](https://packagist.org/packages/designbycode/laravel-helpers)
-[![composer.lock](https://poser.pugx.org/designbycode/laravel-helpers/composerlock)](https://packagist.org/packages/designbycode/laravel-helpers)
-[![GitHub stars](https://img.shields.io/github/stars/DesignByCode/laravel-helpers?style=social)](https://github.com/DesignByCode/Laravel-Helpers/stargazers)
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FDesign_By_Code)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FDesignByCode%2FLaravel-Helpers)
 
 ## Introduction to active links
-__Active links__ is a easy way to set a __active__ class to any link on you page. 
+__Active links__ is a easy way to set a __active__ class to any link on you page and body class to each page.
 
 ### Install with composer
 ```
