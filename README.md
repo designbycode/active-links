@@ -4,6 +4,13 @@
 ## Introduction to active links
 __Active links__ is a easy way to set a __active__ class to any link on you page and body class to each page.
 
+[![Latest Stable Version](https://poser.pugx.org/designbycode/active-links/v/stable)](https://packagist.org/packages/designbycode/active-links)
+[![Total Downloads](https://poser.pugx.org/designbycode/active-links/downloads)](https://packagist.org/packages/designbycode/active-links)
+[![Latest Unstable Version](https://poser.pugx.org/designbycode/active-links/v/unstable)](https://packagist.org/packages/designbycode/active-links)
+[![License](https://poser.pugx.org/designbycode/active-links/license)](https://packagist.org/packages/designbycode/active-links)
+[![Monthly Downloads](https://poser.pugx.org/designbycode/active-links/d/monthly)](https://packagist.org/packages/designbycode/active-links)
+
+
 ### Install with composer
 ```
 $ composer require designbycode/active-links
