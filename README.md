@@ -15,6 +15,7 @@ __Active links__ is a easy way to set a __active__ class to any link on you page
 ```
 $ composer require designbycode/active-links
 ```
+![Active Link](activelinks.jpg)
 
 
 ### Active an class of active for links
