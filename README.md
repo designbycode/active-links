@@ -11,7 +11,7 @@ $ composer require designbycode/active-links
 
 
 ### Active an class of active for links
-Active link for navigation to active on page.
+Add active class to any any link or element. 
 ```php
 <a href="{{ url('/') }}" class='{{ Active::link('/') }}'>Home</a>
 or
