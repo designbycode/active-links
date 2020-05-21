@@ -40,17 +40,17 @@ or
 ```
 
 ```php
-<body class="{{ Active::bodyClass() }}">
+<body class="{{ Active::body() }}">
     ...
-<body class="{{ set_body() }}">
+<body class="{{ active_body() }}">
     ...
 ```
 
 Classes can be added or remove passing 2 arrays. The first array will add classes and the second array will exclude classes. 
 ```php
-<body class="{{ Active::bodyClass(['foo', 'bar'], ['body', 'foo-bar']) }}">
+<body class="{{ Active::body(['foo', 'bar'], ['body', 'foo-bar']) }}">
     ...
-<body class="{{ set_body(['foo', 'bar'], ['body', 'foo-bar']) }}">
+<body class="{{ active_body(['foo', 'bar'], ['body', 'foo-bar']) }}">
     ...
 ```
 
