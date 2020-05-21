@@ -57,7 +57,7 @@ Classes can be added or remove passing 2 arrays. The first array will add classe
 ### Config Helpers
 Run the following command to publish config helpers to set global class names.
 ```
-php artisan vendor:publish --provider=DesignByCode\Helpers\Providers\HelpersServiceProvider
+php artisan vendor:publish --provider=DesignByCode\ActiveLinks\Providers\ActiveLinksServiceProvider
 ```
 
 ## License
