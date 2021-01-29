@@ -1,6 +1,7 @@
 <?php
 namespace DesignByCode\ActiveLinks\Helpers;
 use Illuminate\Support\Arr;
+
 class Active
 {
     /**
@@ -25,7 +26,7 @@ class Active
         if ($this->configExists()) {
             return config('active-links.menu.active');
         }else {
-            return 'nav__links__item--active';
+            return 'active';
         }
     }
 

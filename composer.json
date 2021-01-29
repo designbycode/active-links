@@ -41,7 +41,7 @@
                 "DesignByCode\\ActiveLinks\\Providers\\ActiveLinksServiceProvider"
             ],
             "aliases": {
-                "Set": "DesignByCode\\ActiveLinks\\Facades\\Active"
+                "Active": "DesignByCode\\ActiveLinks\\Facades\\Active"
             }
         }
     },

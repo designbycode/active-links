@@ -2,7 +2,7 @@
 return [
 
     "menu" => [
-        "active" => env('HELPER_ACTIVE_CLASS', 'nav__links__item--active')
+        "active" => env('HELPER_ACTIVE_CLASS', 'active')
     ],
     "body" => [
         'default' => 'body',

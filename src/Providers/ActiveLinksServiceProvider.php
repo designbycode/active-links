@@ -2,13 +2,11 @@
 
 namespace DesignByCode\ActiveLinks\Providers;
 
-
 use DesignByCode\ActiveLinks\Helpers\Active;
 use Illuminate\Support\ServiceProvider;
 
 class ActiveLinksServiceProvider extends ServiceProvider
 {
-
 
     /**
      * Register services.
@@ -17,7 +15,9 @@ class ActiveLinksServiceProvider extends ServiceProvider
      */
     public function register()
     {
-       $this->app->alias(Active::class,'active');
+        $this->app->bind('active', function($app) {
+            return new Active();
+        });
     }
 
     /**
@@ -28,11 +28,14 @@ class ActiveLinksServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/helpers.php' => config_path('helpers.php'),
-        ], 'helpers');
+            __DIR__.'/../../config/active-links.php' => config_path('active-links.php'),
+        ], 'active-links');
     }
 
-    public function provides()
+    /**
+     * @return string[]
+     */
+    public function provides(): array
     {
         return ['active'];
     }

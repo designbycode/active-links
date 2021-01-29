@@ -2,7 +2,7 @@
 
 
 ## Introduction to active links
-__Active links__ is a easy way to set a __active__ class to any link on you page and body class to each page.
+__Active links__ is an easy way to set a __active__ class to any link on you page and body class to each page.
 
 [![Latest Stable Version](https://poser.pugx.org/designbycode/active-links/v/stable)](https://packagist.org/packages/designbycode/active-links)
 [![Total Downloads](https://poser.pugx.org/designbycode/active-links/downloads)](https://packagist.org/packages/designbycode/active-links)
