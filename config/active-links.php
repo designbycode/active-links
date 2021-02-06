@@ -6,7 +6,9 @@ return [
     ],
     "body" => [
         'default' => 'body',
-        'prefix' => true,
+        'prefix' => false,
+        'withSegments' => false,
+        'prefixSegments' => false,
         'exclude' => []
     ]
 
