@@ -17,7 +17,6 @@ class Active
         return $this->returnIf($this->onPage($path), $active);
     }
 
-
     /**
      * @return \Illuminate\Config\Repository|mixed|string
      */
@@ -68,7 +67,11 @@ class Active
     {
         $body = config('active-links.body.default');
         $prefix = config('active-links.body.prefix');
+        $prefixSegments = config('active-links.body.prefixSegments');
+        $withSegments = config('active-links.body.withSegments');
+
         $classes = array_merge([$body], $class);
+        $segments = $this->segments();
         if ($this->getRouteName() === null && $this->onPage('/')) {
             if( $prefix === true) {
                 $classes[] = $body . "-frontpage";
@@ -78,6 +81,17 @@ class Active
             if( $prefix === true) {
                 $classes[] = $body . "-" . $this->getRouteName();
             }
+
+            if ($withSegments) {
+                foreach ($segments as $segment) {
+                    if ($prefixSegments) {
+                        $classes[] = $body . "-" . $segment;
+                    }else {
+                        $classes[] =  $segment;
+                    }
+                }
+            }
+
             $classes[] = $this->getRouteName();
         }
         if ($this->configExists()) {
@@ -87,6 +101,14 @@ class Active
         $classSet = implode(' ', $classes);
 
         return $classSet;
+    }
+
+    /**
+     * @return array
+     */
+    private function segments(): array
+    {
+        return request()->segments();
     }
 
     /**
